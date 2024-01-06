@@ -1,9 +1,11 @@
 import React from 'react'
 import Wrapper from '../Wrapper'
+import CustomParticles from '../CustomParticles'
 
 const InfoStrip = () => {
   return (
     <div className='lg:max-w-screen-xl my-0 mx-auto flex items-center justify-center flex-wrap gap-16 lg:gap-24 text-center'>
+      <CustomParticles />
       <Wrapper slideDirection="right" className="flex flex-col gap-2 items-center justify-center">
         <div className='border border-dashed w-max p-4 rounded-xl'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">

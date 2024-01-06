@@ -27,7 +27,7 @@ const Contact = () => {
                 <Wrapper slideDirection="left"><h5 className='font-bold text-4xl'>Lets discuss on something <span className='text-primary-500'>cool</span> together 👋</h5></Wrapper>
                 <div className='flex flex-col gap-4 items-start'>
                     <a href="mailto:info@jodetx.com">info&#64;societygo.com</a>
-                    <div>+(91) **********</div>
+                    <a href='tel:9004866217'>+(91) 90048 66217</a>
                     <div>BUILDING NO 404, ROOM NO 403, TUKARAM KR TALAVALI GAON, GHANSOLI, NAVI MUMBAI, THANE-400701. </div>
                 </div>
                 <iframe

@@ -30,7 +30,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <button className={`fixed p-2 lg:hidden top-8 right-8 z-30 ${isSticky && !navbarStatus && 'bg-white rounded-full shadow-md'}`} onClick={() => setNavbarStatus(!navbarStatus)}>
+      <button className={`fixed p-2 lg:hidden top-4 right-4 z-30 ${isSticky && !navbarStatus && 'bg-white rounded-full shadow-md'}`} onClick={() => setNavbarStatus(!navbarStatus)}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 transition-all">
           {!navbarStatus ?
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /> :
@@ -41,21 +41,17 @@ const Navbar = () => {
 
       <div
         className={`
-          fixed h-screen lg:h-max top-0 left-0 w-full z-20 transition-all 
-          ${isSticky ?
-            'bg-white text-slate-700 shadow-sm' :
-            'text-slate-700 bg-white lg:bg-transparent lg:text-white'
-          }
+          fixed h-screen lg:h-max top-0 left-0 w-full z-20 transition-all bg-white text-slate-700 shadow-sm
           ${!navbarStatus && '-translate-y-full lg:translate-y-0'}
         `}>
         <div className='flex flex-col lg:flex-row items-center justify-center lg:justify-between py-4 px-2 h-full max-w-screen-xl my-0 mx-auto'>
           <a href="#home"><img src="" alt="" width={50} height={50} /></a>
           <ul className='flex flex-col lg:flex-row items-center justify-center gap-5'>
-            <li><button className={`relative ${isSticky && 'hover:text-primary-500'}`} onClick={() => scrollTo('home')}>Home</button></li>
-            <li><button className={`relative ${isSticky && 'hover:text-primary-500'}`} onClick={() => scrollTo('about')}>About</button></li>
-            <li><button className={`relative ${isSticky && 'hover:text-primary-500'}`} onClick={() => scrollTo('features')}>Features</button></li>
-            <li><button className={`relative ${isSticky && 'hover:text-primary-500'}`} onClick={() => scrollTo('contact')}>Contact</button></li>
-            <li><button className={`relative ${isSticky && 'hover:text-primary-500'}`}>Login</button></li>
+            <li><button className="relative hover:text-primary-500" onClick={() => scrollTo('home')}>Home</button></li>
+            <li><button className="relative hover:text-primary-500" onClick={() => scrollTo('about')}>About SocietyGo</button></li>
+            <li><button className="relative hover:text-primary-500" onClick={() => scrollTo('features')}>Features</button></li>
+            <li><button className="relative hover:text-primary-500" onClick={() => scrollTo('contact')}>Contact</button></li>
+            <li><button className="relative hover:text-primary-500">Login</button></li>
             <li className='dropdown'>
               <div className='dropdown__title'>Download the App</div>
               <ul className="dropdown__content shadow-md">
